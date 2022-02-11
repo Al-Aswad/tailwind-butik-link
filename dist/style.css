@@ -567,6 +567,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 24rem;
 }
 
+.flex-auto {
+  flex: 1 1 auto;
+}
+
 @-webkit-keyframes bounce {
   0%, 100% {
     transform: translateY(-25%);
@@ -598,6 +602,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .animate-bounce {
   -webkit-animation: bounce 1s infinite;
           animation: bounce 1s infinite;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.items-center {
+  align-items: center;
 }
 
 .justify-center {
@@ -718,8 +730,31 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 0.5rem;
 }
 
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.pr-2 {
+  padding-right: 0.5rem;
+}
+
 .text-center {
   text-align: center;
+}
+
+.align-middle {
+  vertical-align: middle;
 }
 
 .font-semibold {
@@ -755,4 +790,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-blur: blur(4px);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+
+@media (min-width: 640px) {
+  .sm\:p-0 {
+    padding: 0px;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:p-0 {
+    padding: 0px;
+  }
 }
