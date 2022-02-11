@@ -1,0 +1,153 @@
+/* umum */
+.section-padding {
+  margin-top: 120px;
+  margin-bottom: 60px;
+}
+.section-heading {
+  margin-bottom: 60px;
+}
+
+.pageOverPlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 10;
+  visibility: hidden;
+  opacity: 0;
+  background: #363636;
+  -webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+.pageOverPlay.active {
+  opacity: 0.5;
+  visibility: visible;
+}
+
+/* SIDEBAR MENU */
+.sidebar-menu {
+  z-index: 999;
+  visibility: hidden;
+  -webkit-transform: translateX(0);
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fff;
+  height: 100%;
+  /* width: calc(100vw - 65px); */
+  width: 340px;
+  background: #454545;
+  color: #fff;
+  transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  /* transition: transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1),
+    visibility 0.5s cubic-bezier(0.645, 0.045, 0.355, 1),
+    -webkit-transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1); */
+
+  /* max-height: 615px; */
+}
+.sidebar-menu.active {
+  visibility: visible;
+}
+
+.sidebar-menu a {
+  color: #fff;
+  padding: 1rem 0;
+  font-size: 14px;
+}
+
+/* Featured product */
+
+.feature-product-content .product-name {
+  padding-top: 28px;
+}
+
+.container-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 15px 18px;
+}
+.fill {
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 0px;
+  /* flex: 1 0 0; */
+  flex: 1 0 0;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.navbar-menu {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding-bottom: 18px;
+  width: 100%;
+  text-align: center;
+}
+#header {
+  z-index: 10;
+}
+
+main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* .header-main {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+} */
+
+/* .header-main img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+} */
+
+body {
+  font-family: "Merriweather", serif;
+}
+
+.feature-product-heading {
+  text-align: center;
+}
+.btn {
+  border-radius: 0;
+  border: none;
+}
+.btn-primary {
+  background-color: #fec234;
+}
+
+/* Bootstrap CSS */
+a {
+  color: #1a1a1a;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  letter-spacing: 0.09em;
+
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 23px;
+}
+a:hover {
+  color: #1a1a1a;
+}
+.card {
+  border: none;
+}
