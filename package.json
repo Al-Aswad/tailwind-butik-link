@@ -11,7 +11,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "npx tailwindcss -i ./src/main.css -o ./dist/style.css --watch"
+    "watch": "npx tailwindcss -i ./src/main.css -o ./public/assets/css/styles.css --watch"
   },
   "author": "",
   "license": "ISC"
