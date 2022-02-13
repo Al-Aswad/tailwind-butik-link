@@ -36,15 +36,16 @@
                         alt="arrow">
                 </div>
             </section>
-            <div class="container mx-auto">
-                <div class="mb-4 flex justify-center">
-                    <ul class="flex flex-wrap -mb-px" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
-                        <li class="mr-2" role="presentation">
-                            <button
-                                class="flex py-4 px-4 text-sm font-medium text-center text-gray-500 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:text-gray-400 dark:hover:text-gray-300"
-                                id="profile-tab" data-tabs-target="#profile" type="button" role="tab"
-                                aria-controls="profile" aria-selected="false">
-                                <span>
+
+            <div class="mb-4  sticky top-0 w-full bg-slate-400">
+                <ul class="flex justify-between w-2/4 mx-auto -mb-px" id="myTab" data-tabs-toggle="#myTabContent"
+                    role="tablist">
+                    <li class="" role="presentation">
+                        <button
+                            class="flex py-4 px-4 text-sm font-medium text-center text-gray-500 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:text-gray-400 dark:hover:text-gray-300"
+                            id="profile-tab" data-tabs-target="#profile" type="button" role="tab"
+                            aria-controls="profile" aria-selected="false">
+                            <!-- <span>
 
                                     <svg class="mr-2 w-5 h-5 text-gray-400 group-hover:text-gray-500 dark:text-gray-500 dark:group-hover:text-gray-300"
                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -52,67 +53,118 @@
                                             d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"
                                             clip-rule="evenodd"></path>
                                     </svg>
-                                </span>
-                                Profile
-                            </button>
-                        </li>
-                        <li class="mr-2" role="presentation">
-                            <button
-                                class="inline-block py-4 px-4 text-sm font-medium text-center text-gray-500 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:text-gray-400 dark:hover:text-gray-300 active"
-                                id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab"
-                                aria-controls="dashboard" aria-selected="true">Dashboard</button>
-                        </li>
-                        <li class="mr-2" role="presentation">
-                            <button
-                                class="inline-block py-4 px-4 text-sm font-medium text-center text-gray-500 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:text-gray-400 dark:hover:text-gray-300"
-                                id="settings-tab" data-tabs-target="#settings" type="button" role="tab"
-                                aria-controls="settings" aria-selected="false">Settings</button>
-                        </li>
-                    </ul>
+                                </span> -->
+                            Semua Katalog
+                        </button>
+                    </li>
+                    <li class="" role="presentation">
+                        <button
+                            class="inline-block py-4 px-4 text-sm font-medium text-center text-gray-500 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:text-gray-400 dark:hover:text-gray-300 active"
+                            id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab"
+                            aria-controls="dashboard" aria-selected="true">
+                            Kategori
+                        </button>
+                    </li>
+                    <li class="" role="presentation">
+                        <button
+                            class="inline-block py-4 px-4 text-sm font-medium text-center text-gray-500 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:text-gray-400 dark:hover:text-gray-300"
+                            id="settings-tab" data-tabs-target="#settings" type="button" role="tab"
+                            aria-controls="settings" aria-selected="false">
+                            Diskon
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <div id="myTabContent">
+                <div class="hidden p-4 bg-gray-50 rounded-lg dark:bg-gray-800" id="profile" role="tabpanel"
+                    aria-labelledby="profile-tab">
+                    <div
+                        class="bg-white rounded-lg shadow-md my-1 dark:bg-gray-800 dark:border-gray-700 overflow-hidden mx-1 ">
+                        <img src="assets/img/d45f51d9a701cbb64bfe79f442ed785a_1614400273575._resized1024.jpg"
+                            alt="produk" width="300">
+                    </div>
+                    <div
+                        class="bg-white rounded-lg shadow-md my-1 dark:bg-gray-800 dark:border-gray-700 overflow-hidden mx-1 ">
+                        <img src="assets/img/d45f51d9a701cbb64bfe79f442ed785a_1614400273575._resized1024.jpg"
+                            alt="produk" width="300">
+                    </div>
+                    <div
+                        class="bg-white rounded-lg shadow-md my-1 dark:bg-gray-800 dark:border-gray-700 overflow-hidden mx-1 ">
+                        <img src="assets/img/d45f51d9a701cbb64bfe79f442ed785a_1614400273575._resized1024.jpg"
+                            alt="produk" width="300">
+                    </div>
                 </div>
-                <div id="myTabContent">
-                    <div class="hidden p-4 bg-gray-50 rounded-lg dark:bg-gray-800" id="profile" role="tabpanel"
-                        aria-labelledby="profile-tab">
-                        <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong
-                                class="font-medium text-gray-800 dark:text-white">Profile tab's associated
-                                content</strong>. Clicking another tab will toggle the visibility of this one for the
-                            next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
-                    </div>
-                    <div class="p-4 bg-gray-50 rounded-lg dark:bg-gray-800" id="dashboard" role="tabpanel"
-                        aria-labelledby="dashboard-tab">
-                        <div class="flex justify-center">
-                            <div class=" bg-white rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700
-                            overflow-hidden">
-                                <img src="assets/img/d45f51d9a701cbb64bfe79f442ed785a_1614400273575._resized1024.jpg"
-                                    alt="produk" width="300">
-                            </div>
-                            <div
-                                class="bg-white rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 overflow-hidden">
-                                <img src="assets/img/d45f51d9a701cbb64bfe79f442ed785a_1614400273575._resized1024.jpg"
-                                    alt="produk" width="300">
-                            </div>
-                            <div
-                                class="bg-white rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 overflow-hidden">
-                                <img src="assets/img/d45f51d9a701cbb64bfe79f442ed785a_1614400273575._resized1024.jpg"
-                                    alt="produk" width="300">
-                            </div>
+                <div class="p-4 bg-gray-50 rounded-lg dark:bg-gray-800 mx-auto" id="dashboard" role="tabpanel"
+                    aria-labelledby="dashboard-tab">
+                    <div class="flex flex-wrap justify-center space-x-5">
 
+                        <div class="bg-gray-100 flex items-start">
+                            <div
+                                class="container mx-auto p-9 bg-white max-w-sm rounded-sm overflow-hidden shadow-lg hover:shadow-2xl transition duration-300">
+                                <img class="rounded-md" src="assets/img/products/l-p2.jpg" alt="" />
+                                <div class="flex justify-between items-center">
+                                    <div>
+                                        <h1 class="mt-5 text-2xl font-semibold">Aloe Cactus</h1>
+                                        <p class="mt-2">$11.99</p>
+                                    </div>
+                                    <div>
+                                        <button
+                                            class="text-white text-md font-semibold bg-green-400 py-2 px-4 rounded-lg shadow-md hover:shadow-lg transition duration-500 transform-gpu hover:scale-110 ">Buy
+                                            Now</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                        <div class="bg-gray-100 flex items-start">
+                            <div
+                                class="container mx-auto p-9 bg-white max-w-sm rounded-sm overflow-hidden shadow-lg hover:shadow-2xl transition duration-300">
+                                <img class="rounded-md" src="assets/img/products/l-p2.jpg" alt="" />
+                                <div class="flex justify-between items-center">
+                                    <div>
+                                        <h1 class="mt-5 text-2xl font-semibold">Aloe Cactus</h1>
+                                        <p class="mt-2">$11.99</p>
+                                    </div>
+                                    <div>
+                                        <button
+                                            class="text-white text-md font-semibold bg-green-400 py-2 px-4 rounded-lg shadow-md hover:shadow-lg transition duration-500 transform-gpu hover:scale-110 ">Buy
+                                            Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-gray-100 flex items-start">
+                            <div
+                                class="container mx-auto p-9 bg-white max-w-sm rounded-sm overflow-hidden shadow-lg hover:shadow-2xl transition duration-300">
+                                <img class="rounded-md" src="assets/img/products/l-p2.jpg" alt="" />
+                                <div class="flex justify-between items-center">
+                                    <div>
+                                        <h1 class="mt-5 text-2xl font-semibold">Aloe Cactus</h1>
+                                        <p class="mt-2">$11.99</p>
+                                    </div>
+                                    <div>
+                                        <button
+                                            class="text-white text-md font-semibold bg-green-400 py-2 px-4 rounded-lg shadow-md hover:shadow-lg transition duration-500 transform-gpu hover:scale-110 ">Buy
+                                            Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="hidden p-4 bg-gray-50 rounded-lg dark:bg-gray-800" id="settings" role="tabpanel"
-                        aria-labelledby="settings-tab">
-                        <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong
-                                class="font-medium text-gray-800 dark:text-white">Settings tab's associated
-                                content</strong>. Clicking another tab will toggle the visibility of this one for the
-                            next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
-                    </div>
-                    <div class="hidden p-4 bg-gray-50 rounded-lg dark:bg-gray-800" id="contacts" role="tabpanel"
-                        aria-labelledby="contacts-tab">
-                        <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong
-                                class="font-medium text-gray-800 dark:text-white">Contacts tab's associated
-                                content</strong>. Clicking another tab will toggle the visibility of this one for the
-                            next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
-                    </div>
+                </div>
+                <div class="hidden p-4 bg-gray-50 rounded-lg dark:bg-gray-800" id="settings" role="tabpanel"
+                    aria-labelledby="settings-tab">
+                    <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong
+                            class="font-medium text-gray-800 dark:text-white">Settings tab's associated
+                            content</strong>. Clicking another tab will toggle the visibility of this one for the
+                        next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+                </div>
+                <div class="hidden p-4 bg-gray-50 rounded-lg dark:bg-gray-800" id="contacts" role="tabpanel"
+                    aria-labelledby="contacts-tab">
+                    <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong
+                            class="font-medium text-gray-800 dark:text-white">Contacts tab's associated
+                            content</strong>. Clicking another tab will toggle the visibility of this one for the
+                        next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
                 </div>
             </div>
 
