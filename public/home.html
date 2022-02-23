@@ -6,31 +6,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/img/icons/logo.png" type="image/x-icon">
-    <title>Jutti Lapah</title>
+    <title>Butik Zahrazhafira</title>
     <link rel="stylesheet" href="assets/css/styles.css">
     <!-- <script src="https://unpkg.com/@tabler/icons@1.36.0/icons-react/dist/index.umd.js"></script> -->
     <script src="https://kit.fontawesome.com/03b9d39178.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <div class="min-h-screen relative">
         <header class="sticky top-0 z-10 pt-2 backdrop-blur-sm bg-slate-100/50">
-            <div class="container mx-auto flex justify-between p-4 items-center">
+            <div class="container mx-auto flex justify-between p-2 items-center">
                 <div class="">
-                    <img class="mr-10" src="assets/img/icons/logo.png" alt="logo-zahrazhafira" width="60">
+                    <!-- <img class="mr-10" src="assets/img/icons/logo.png" alt="logo-zahrazhafira" width="60"> -->
+                    <h1 class="text-lg font-body font-medium text-slate-900">Butik Zahrazhafira</h1>
                 </div>
-                <div class="">
+                <!-- <div class="">
                     <ul class="flex space-x-4">
                         <li><a class="font-sans font-semibold text-gray-800" href="#">Home</a></li>
                         <li><a class="font-sans font-semibold text-gray-800" href="#">Ready to Wear</a></li>
                         <li><a class="font-sans font-semibold text-gray-800" href="#">Made by Order</a></li>
                         <li><a class="font-sans font-semibold text-gray-800" href="#">About</a></li>
                     </ul>
-                </div>
+                </div> -->
                 <div class="">
                     <div class="flex space-x-4 ">
-                        <img class="" src="assets/img/icons/search.png" alt="icon-account" width="30">
-                        <img class="img" src="assets/img/icons/account-1439373.png" alt="icon-account" width="30">
+                        <img class="w-6 h-6" src="assets/img/icons/search.png" alt="icon-account">
+                        <img class="w-6 h-6" src="assets/img/icons/account-1439373.png" alt="icon-account">
                     </div>
                 </div>
             </div>
@@ -47,8 +52,8 @@
 
             <!-- Menu Product -->
             <div class="mb-4 sticky top-0 w-full bg-white z-20 py-6">
-                <ul class="flex justify-between items-center px-2 sm:px-0 w-full sm:w-2/4 mx-auto -mb-px" id="myTab"
-                    data-tabs-toggle="#myTabContent" role="tablist">
+                <ul class="flex justify-between items-center px-2 sm:px-0 w-full sm:w-3/4 md:w-2/4 mx-auto -mb-px"
+                    id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
                     <li class="" role="presentation">
                         <button class="h-10 px-6 font-semibold rounded-md border border-slate-200 text-slate-900"
                             type="button">
@@ -68,11 +73,14 @@
                     </li>
                 </ul>
             </div>
-            <div id="container-product bg-gray-300">
-                <div class="flex flex-wrap justify-center gap-4">
+            <div class="container mx-auto px-2 sm:px-0 container-product">
+                <div>
+                    <input class="w-full" type="text">
+                </div>
 
-                    <div class="flex w-72 border rounded-md border-slate-200 overflow-hidden">
-                        <div class="">
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                    <div>
+                        <div class="border rounded-md border-slate-200 overflow-hidden">
                             <img class="" src="assets/img/products/l-p2.jpg" alt="" />
                             <div class="flex justify-between p-2">
                                 <div class="text-sm font-medium text-slate-700 mt-2 ">
@@ -99,8 +107,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex w-72 border rounded-md border-slate-200 overflow-hidden">
-                        <div class="">
+                    <div>
+                        <div class="border rounded-md border-slate-200 overflow-hidden">
                             <img class="" src="assets/img/products/l-p2.jpg" alt="" />
                             <div class="flex justify-between p-2">
                                 <div class="text-sm font-medium text-slate-700 mt-2 ">
@@ -127,8 +135,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex w-72 border rounded-md border-slate-200 overflow-hidden">
-                        <div class="">
+                    <div>
+                        <div class="border rounded-md border-slate-200 overflow-hidden">
                             <img class="" src="assets/img/products/l-p2.jpg" alt="" />
                             <div class="flex justify-between p-2">
                                 <div class="text-sm font-medium text-slate-700 mt-2 ">
@@ -155,8 +163,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex w-72 border rounded-md border-slate-200 overflow-hidden">
-                        <div class="">
+                    <div>
+                        <div class="border rounded-md border-slate-200 overflow-hidden">
                             <img class="" src="assets/img/products/l-p2.jpg" alt="" />
                             <div class="flex justify-between p-2">
                                 <div class="text-sm font-medium text-slate-700 mt-2 ">
@@ -184,6 +192,122 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- <div class="flex flex-wrap justify-between">
+
+                    <div class="flex w-72 border rounded-md border-slate-200 overflow-hidden">
+                        <div class="">
+                            <img class="" src="assets/img/products/l-p2.jpg" alt="" />
+                            <div class="flex justify-between p-2">
+                                <div class="text-sm font-medium text-slate-700 mt-2 ">
+                                    In stock
+                                </div>
+                                <button
+                                    class="flex-none flex items-center justify-center w-9 h-9 rounded-md text-slate-300 border border-slate-200"
+                                    type="button" aria-label="Like">
+                                    <svg width="20" height="20" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" />
+                                    </svg>
+                                </button>
+                            </div>
+
+
+                            <div class="p-2">
+                                <div class="flex flex-wrap">
+                                    <h1 class="flex-auto text-lg font-semibold text-slate-900">
+                                        Classic Utility Jacket
+                                    </h1>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex w-72 border rounded-md border-slate-200 overflow-hidden">
+                        <div class="">
+                            <img class="" src="assets/img/products/l-p2.jpg" alt="" />
+                            <div class="flex justify-between p-2">
+                                <div class="text-sm font-medium text-slate-700 mt-2 ">
+                                    In stock
+                                </div>
+                                <button
+                                    class="flex-none flex items-center justify-center w-9 h-9 rounded-md text-slate-300 border border-slate-200"
+                                    type="button" aria-label="Like">
+                                    <svg width="20" height="20" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" />
+                                    </svg>
+                                </button>
+                            </div>
+
+
+                            <div class="p-2">
+                                <div class="flex flex-wrap">
+                                    <h1 class="flex-auto text-lg font-semibold text-slate-900">
+                                        Classic Utility Jacket
+                                    </h1>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex w-72 border rounded-md border-slate-200 overflow-hidden">
+                        <div class="">
+                            <img class="" src="assets/img/products/l-p2.jpg" alt="" />
+                            <div class="flex justify-between p-2">
+                                <div class="text-sm font-medium text-slate-700 mt-2 ">
+                                    In stock
+                                </div>
+                                <button
+                                    class="flex-none flex items-center justify-center w-9 h-9 rounded-md text-slate-300 border border-slate-200"
+                                    type="button" aria-label="Like">
+                                    <svg width="20" height="20" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" />
+                                    </svg>
+                                </button>
+                            </div>
+
+
+                            <div class="p-2">
+                                <div class="flex flex-wrap">
+                                    <h1 class="flex-auto text-lg font-semibold text-slate-900">
+                                        Classic Utility Jacket
+                                    </h1>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex w-72 border rounded-md border-slate-200 overflow-hidden">
+                        <div class="">
+                            <img class="" src="assets/img/products/l-p2.jpg" alt="" />
+                            <div class="flex justify-between p-2">
+                                <div class="text-sm font-medium text-slate-700 mt-2 ">
+                                    In stock
+                                </div>
+                                <button
+                                    class="flex-none flex items-center justify-center w-9 h-9 rounded-md text-slate-300 border border-slate-200"
+                                    type="button" aria-label="Like">
+                                    <svg width="20" height="20" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" />
+                                    </svg>
+                                </button>
+                            </div>
+
+
+                            <div class="p-2">
+                                <div class="flex flex-wrap">
+                                    <h1 class="flex-auto text-lg font-semibold text-slate-900">
+                                        Classic Utility Jacket
+                                    </h1>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
 
 
             </div>
